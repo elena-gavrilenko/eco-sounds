@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco-sounds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="player">
+    <header class="player__header">
+      <div class="header">
+        <img
+          class="logo header__logo"
+          src="./assets/svg/logo.svg"
+          alt="logo-bird"
+        />
+        <ul class="nav header__nav">
+          <li class="nav__item" data-bird="solovey">Соловей</li>
+          <li class="nav__item" data-bird="drozd">Дрозд</li>
+          <li class="nav__item" data-bird="zarynka">Малиновка</li>
+          <li class="nav__item" data-bird="javoronok">Жаворонок</li>
+          <li class="nav__item" data-bird="slavka">Славка</li>
+          <li class="nav__item" data-bird="sviristel">Свиристель</li>
+        </ul>
+      </div>
+    </header>
+    <main class="player__main">
+      <div class="main">
+        <audio>
+          <source
+            src="./assets/audio/forest.mp3"
+            type="audio/mpeg"
+            class="main__audio"
+          />
+        </audio>
+        <button class="main__button"></button>
+      </div>
+    </main>
+    <footer class="player__footer">
+      <div class="footer">
+        <div class="data footer__data">
+          <p class="data__copyrigh">©</p>
+          <p class="data__year">2022</p>
+          <a
+            class="data__github"
+            href="https://github.com/elena-gavrilenko/rsschool-cv"
+            >github</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
