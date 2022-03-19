@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4em;
+}
+
+.player__header,
+.player__footer {
+  max-width: 1440px;
+  width: calc(100vw - 40px);
+  margin: 0 auto;
+}
+
+.header__logo {
+  width: 50px;
+  height: 50px;
+  filter: invert(17%) sepia(14%) saturate(716%) hue-rotate(7deg) brightness(90%) contrast(86%);
+  transition: 0.5s;
+}
+.header__logo:hover {
+  cursor: pointer;
+  filter: opacity(1);
+  transition: 0.5s;
+}
+.header__nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.nav__item {
+  padding: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.nav__item:hover{
+  color: #BDAE82;
+  transition: 0.5s;
+}
+.nav__item.active {
+  color: #BDAE82;
+}
+.header,
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  height: 60px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  height: calc(100vh - 120px);
+  min-height: 300px;
+  background-image: url(./assets/img/forest.jpg);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main__button {
+  width: 200px;
+  height: 200px;
+  border: none;
+  background-image: url(./assets/svg/play.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+  cursor: pointer;
+  filter:drop-shadow(2px 4px 6px black);
+}
+.main__button:hover {
+  filter: contrast(0.5);
+}
+.pause {
+  background-image: url(./assets/svg/pause.svg);
+}
+.footer__rss {
+  width: 140px;
+  height: 50px;
+  background-size: contain;
+  background-image: url(./assets/svg/rss.svg);
+  background-repeat: no-repeat
+}
+.footer__rss:hover {
+  filter: invert(17%) sepia(14%) saturate(716%) hue-rotate(7deg) brightness(90%) contrast(86%);
+  transition: 0.5s;
+}
+.footer__data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+.data__year {
+  padding: 0 20px;
+}
+
+.data__github {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.data__github:hover{
+  color: #BDAE82;
+  transition: 0.5s
+}
