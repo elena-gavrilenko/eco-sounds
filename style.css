@@ -94,17 +94,6 @@
 .pause {
   background-image: url(./assets/svg/pause.svg);
 }
-.footer__rss {
-  width: 140px;
-  height: 50px;
-  background-size: contain;
-  background-image: url(./assets/svg/rss.svg);
-  background-repeat: no-repeat
-}
-.footer__rss:hover {
-  filter: invert(17%) sepia(14%) saturate(716%) hue-rotate(7deg) brightness(90%) contrast(86%);
-  transition: 0.5s;
-}
 .footer__data {
   display: flex;
   flex-direction: row;
